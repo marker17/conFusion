@@ -39,6 +39,8 @@ body{
 	
 	
 }
+
+
 .navbar-inverse{
 	background: #303F9F;
 }
@@ -67,6 +69,13 @@ body{
 .navbar-inverse .navbar-nav > .open .dropdown-menu> li> a:hover{
 
 	color:#000000;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+
+#remember {
+	color:#FFF;
 }
 
 
