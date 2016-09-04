@@ -94,3 +94,19 @@ body{
 .affix {
     top:100px;
 }
+
+/*
+.popover-title{
+    background: #ffff99;
+    color:#000;
+}
+
+.popover-content{
+	color:#000;
+
+}*/
+
+
+.modal-wide .modal-dialog {
+  width: 50%; /* or whatever you wish */
+}
