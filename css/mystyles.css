@@ -110,3 +110,25 @@ body{
 .modal-wide .modal-dialog {
   width: 50%; /* or whatever you wish */
 }
+
+.carousel {
+    background:#1A237E;
+}
+.carousel .item {
+  height: 300px;
+}
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+.carousel-caption {
+      
+	margin:0 auto;
+	text-align:center;
+	max-width: 550px;
+
+     
+}
