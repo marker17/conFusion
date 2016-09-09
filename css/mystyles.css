@@ -20,6 +20,7 @@
 }
 
 .jumbotron{
+	
 	padding: 70px 30px 70px 30px;
 	margin:0px auto;
 	background: #7986CB;
@@ -130,4 +131,11 @@ body{
 	text-align:center;
 	max-width: 550px;
 
+}
+
+
+#carouselButtons {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
 }
