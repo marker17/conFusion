@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap-social",
+  "_cacheHeaders": {
+    "ETag": "\"4b4dc858b084572c969c293c7e21fceb\"",
+    "Last-Modified": "Sat, 19 Sep 2015 18:00:12 GMT",
+    "Content-Length": "18618",
+    "Content-Type": "text/css"
+  },
+  "_release": "e-tag:4b4dc858b",
+  "main": "index.css",
+  "_source": "https://d396qusza40orc.cloudfront.net/phoenixassets/web-frameworks/bootstrap-social.css",
+  "_target": "*",
+  "_originalSource": "https://d396qusza40orc.cloudfront.net/phoenixassets/web-frameworks/bootstrap-social.css",
+  "_direct": true
+}

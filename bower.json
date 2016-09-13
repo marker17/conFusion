@@ -1,0 +1,28 @@
+{
+  "name": "conFusion",
+  "homepage": "https://github.com/marker17/conFusion",
+  "authors": [
+    "Mark Brillo"
+  ],
+  "description": "Website for an awesome restaurant",
+  "main": "index.html",
+  "keywords": [
+    "conFusion",
+    "Ristorante",
+    "Confusion",
+    "Fusion",
+    "Restaurant"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}
