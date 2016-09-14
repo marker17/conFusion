@@ -94,3 +94,7 @@ body {
   position: absolute;
   right: 0px;
 }
+.modal-wide .modal-dialog {
+  width: 50%; /* or whatever you wish */
+}
+
