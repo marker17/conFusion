@@ -26,26 +26,35 @@
 <body>
 
   <div class="container">
-    <div class="row row-content" ng-controller="dishDetailController as dishCtrl">
+    <div class="row row-content" ng-controller="dishDetailController as dishDetailCtrl">
         
       <div class="col-xs-12">
-        
         <div class="media">
           <div class="media-left media-middle">
             <a href="#">
-              <img class="media-object img-thumbnail" src="img/uthappizza.png" alt="Uthappizza">
+              <img class="media-object img-thumbnail" ng-src={{dishDetailCtrl.dish.image}} alt="main dish">   
             </a>
           </div>
           <div class="media-body">
-            <h2 class="media-heading">Uthappizza<span class="label label-danger">Hot</span> <span class="badge">$4.99</span></h2>
-            <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vinecherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-            <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
-          </div>
+            <h2 class="media-heading">{{dishDetailCtrl.dish.name}}
+              <span class="label label-danger">{{dishDetailCtrl.dish.label}}</span>
+              <span class="badge">{{dishDetailCtrl.dish.price | currency}}</span></h2>
+              <p>{{dishDetailCtrl.dish.description}}</p>
+            </div>
         </div>
+        
       </div>
       
       <div class="col-xs-9 col-xs-offset-1">
-        <p>Put the comments here</p>
+        <h4>Customer Comments <span style="color:#cccccc; font-size: 12px;">Sort by: </span><input ng-model="query"></h4>
+                
+                <!-- Comments Section -->
+        <blockquote ng-repeat="feedback in dishDetailCtrl.dish.comments | orderBy: query : reverse">
+          <p>{{feedback.rating}} Stars</p>
+          <p>{{feedback.comment}}</p>
+          <footer>{{feedback.author}}, {{feedback.date | date}}</footer>
+        </blockquote>
+                <!-- End -->
       </div>
     </div>
   </div>
@@ -58,11 +67,11 @@
 
       var dish={
         name:'Uthapizza',
-        image: 'images/uthapizza.png',
+        image: 'app/images/uthapizza.png',
         category: 'mains', 
         label:'Hot',
         price:'4.99',
-        description:'A unique combination of Indian <U> </U>Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
+        description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
         comments: [
         {
           rating:5,
